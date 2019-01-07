@@ -1,0 +1,13 @@
+field,type,max_chars,description
+$TWBOZO01,text,8,Identifies which device created the packet - AMBIENT AIR MODE
+packet_length,unsigned_int,3,the length of the packet (not including all characters up-to the comma which follows this number)
+utc_time,unsigned_int,10,the valid time for this packet (usually 1 second behind actual time)
+ptp_sync,text,1,"indication of whether the CRIO is successfully synchronised to PTP time ( 1 = synced, 0 = not-synced )"
+MFM,double_float,7,Mass Flow Meter
+flight_num,text,5,"indicates the flight number for this packet ( an ""empty"" string here indicates that the CRIO hasn't been assigned a flight number )"
+CPU_Load,single_float,5,indicate cRIO CPU total %
+USB_disk_space,single_float,5,USB disk space used in %
+conc,double_float,8,Reading in signed decimal for Ozone Signal (ppb)
+temp,double_float,5,Bench temperature (degC)
+press,double_float,6,Absorption cell pressure reading (mb)
+flow,signed_int,5,Sample flow in cell (sccm)

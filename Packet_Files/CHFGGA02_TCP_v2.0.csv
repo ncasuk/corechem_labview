@@ -1,0 +1,31 @@
+field,num_of_bytes,bytes_per_data_point,representation,description
+$CHFGGA02,9,9,text,Identifies which device created the packet: new FGGA s/n 00001392
+packet_length,4,4,>unsigned_int,the length of the packet (not including all characters up-to the comma which follows this number)
+utc_time,4,4,>unsigned_int,the valid time for this packet (usually 1 second behind actual time)
+ptp_sync,1,1,text,"indicates whether the cRIO is successfully synchronised to PTP time (1 = synced, 0 = not synced)"
+dummy2,2,2,text,reserved for cRIO temperature
+flight_num,4,4,text,"indicates the flight number for this packet ( an ""empty"" string here indicates that the CRIO hasn't been assigned a flight number )"
+ch4,4,4,single_float,methane in ppm (wet mole fraction from FGGA)
+co2,4,4,single_float,carbon dioxide in ppm (wet mole fraction from FGGA)
+h2o,4,4,single_float,water in ppm
+press_tor,4,4,single_float,cell pressure in torr
+temp_c,4,4,single_float,cell temperature in Celsius
+fit_flag,2,2,>unsigned_int,spectral fit flag
+rda_usec,4,4,single_float,Ring down time in microseconds (laser A Methane/water)
+rdb_usec,4,4,single_float,Ring down time in microseconds (laser B CO2)
+ch4_dry,4,4,single_float,methane dry in ppb (NB negative values when press_torr < 47.5 or >52.5); either calculated or LGR output TBC
+co2_dry,4,4,single_float,carbon dioxide in ppm (NB negative values when press_torr < 47.5 or >52.5); either calculated or LGR output TBC
+MFM,4,4,single_float,Mass Flow Meter
+MFC_1_absolute_pressure,4,4,single_float,ALICAT MFC1 FGGA calibration gas (CALDECK) (PSIA)
+MFC_1_temperature,4,4,single_float,ALICAT MFC1 FGGA calibration gas (CALDECK) (degC)
+MFC_1volumetic_flow,4,4,single_float,ALICAT MFC1 FGGA calibration gas (CALDECK) (lpm)
+MFC_1mass_flow,4,4,single_float,ALICAT MFC1 FGGA calibration gas (CALDECK)  (slpm)
+MFC_1set_point,4,4,single_float,ALICAT MFC1 FGGA calibration gas (CALDECK) (slpm)
+V1,2,2,>unsigned_int,FGGA Calibration Inlet window valve (3 way) 
+V2,2,2,>unsigned_int,FGGA high calibration (CALDECK 3 way)
+V3,2,2,>unsigned_int,FGGA low calibration valve (CALDECK 3 way)
+V4,2,2,>unsigned_int,FGGA Calibration MFC1 valve (CALDECK 2 way NC)
+restart_FGGA,2,2,>unsigned_int,software restart FGGA
+FGGA_Pump,4,4,single_float,FGGA pump speed voltage control (0 to 1.4 volts)
+CAL_MFC_1Set_Value,4,4,single_float,MFC1 software set value
+amb_temp_c,4,4,single_float,FGGA bench temperature in celcius

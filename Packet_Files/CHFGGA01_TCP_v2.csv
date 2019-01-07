@@ -1,0 +1,17 @@
+field,num_of_bytes,bytes_per_data_point,representation,description
+$CHFGGA01,9,9,text,Identifies which device created the packet
+packet_length,4,4,>unsigned_int,the length of the packet (not including all characters up-to the comma which follows this number)
+utc_time,4,4,>unsigned_int,the valid time for this packet (usually 1 second behind actual time)
+dummy1,2,2,text,
+dummy2,2,2,text,
+flight_num,4,4,text,"indicates the flight number for this packet ( an ""empty"" string here indicates that the CRIO hasn't been assigned a flight number )"
+ch4,4,4,single_float,methane in ppm
+co2,4,4,single_float,carbon dioxide in ppm
+h2o,4,4,single_float,water in ppm
+press_tor,4,4,single_float,cell pressure in torr
+temp_c,4,4,single_float,cell temperature in Celsius
+fit_flag,2,2,>unsigned_int,spectral fit flag
+rda_usec,4,4,single_float,Ring down time in microseconds (laser A)
+rdb_usec,4,4,single_float,Ring down time in microseconds (laser B)
+ch4_dry,4,4,single_float,methane dry in ppb (NO negative values when press_torr<47.5)
+co2_dry,4,4,single_float,carbon dioxide dry in ppm  (NO negative values when press_torr<47.5)

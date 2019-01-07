@@ -1,0 +1,37 @@
+field,type,max_chars,description
+CHTSOO01,text,8,Identifies which device created the packet
+packet_length,unsigned_int,3,the length of the packet (not including all characters up-to the comma which follows this number)
+utc_time,unsigned_int,10,the valid time for this packet (usually 1 second behind actual time)
+ptp_sync,text,1,"indication of whether the CRIO is successfully synchronised to PTP time ( 1 = synced, 0 = not-synced )"
+MFM,single_float,7,Mass Flow Meter
+flight_num,text,5,"indicates the flight number for this packet ( an ""empty"" string here indicates that the CRIO hasn't been assigned a flight number )"
+CPU_Load,single_float,5,indicate cRIO CPU total %
+USB_disk_space,single_float,5,USB disk space used in %
+concentration,double_float,14,SO2 concentration in ppb
+pmt_volt,signed_int,10,PMT voltage in volts
+lamp_volt,signed_int,10,Lamp voltage in volts
+lamp_intens,signed_int,10,Lamp intensity in %
+internal_temper,double_float,10,Internal instrument temperature in degC
+react_temper,double_float,10,Reaction chamber temperature in degC
+react_press,double_float,10,Reaction chamber pressure in mmHg
+flow,double_float,10,Sample flow in litres per minute (this is disabled)
+flags,text,10,Status of the device including alarms in 8 Hex digits
+ten_min_so2,double_float,11,10 min moving average of SO2 (ppb)
+eight_hr_so2,double_float,11,8 hour moving average (ppb)
+ten_min_so2_alm,unsigned_int,1,ten minute alarm (boolean)
+eight_hr_so2_alm,unsigned_int,1,eight hour alarm (boolean)
+MFC_2absolute_pressure,double_float,6,ALICAT MFC2 SO2 calibration gas (CALDECK) (PSIA)
+MFC_2temperature,double_float,6,ALICAT MFC2 SO2 calibration gas (CALDECK) (degC)
+MFC_2volumetic_flow,double_float,5,ALICAT MFC2 SO2 calibration gas (CALDECK) (lpm)
+MFC_2mass_flow,double_float,5,ALICAT MFC2 SO2 calibration gas (CALDECK) (slpm)
+MFC_2set_point,double_float,5,ALICAT MFC2 SO2 calibration gas (CALDECK) (slpm)
+MFC_3_absolute_pressure,double_float,6,ALICAT MFC3 TEiSO2 sample (PSIA)
+MFC_3_temperature,double_float,6,ALICAT MFC3 TEiSO2 sample (degC)
+MFC_3volumetic_flow,double_float,5,ALICAT MFC3 TEiSO2 sample (lpm)
+MFC_3mass_flow,double_float,5,ALICAT MFC3 TEiSO2 sample (slpm)
+MFC_3set_point,double_float,5,ALICAT MFC3 TEiSO2 sample (slpm)
+V6,unsigned_int,2,SO2 zeroing valve
+V8,unsigned_int,2,SO2 Cal valve (3 way)
+V9,unsigned_int,2,SO2 Cal MFC2 valve (two way NC)
+MFC2_Set_Value,double_float,5,MFC2 software set value
+MFC3_Set_Value,double_float,5,MFC3 software set value

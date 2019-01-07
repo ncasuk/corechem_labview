@@ -1,0 +1,20 @@
+field,type,max_chars,description
+$TEIOZO01,text,8,Identifies which device created the packet
+packet_length,unsigned_int,3,the length of the packet (not including all characters up-to the comma which follows this number)
+utc_time,unsigned_int,10,the valid time for this packet (usually 1 second behind actual time)
+ptp_sync,text,1,"indication of whether the CRIO is successfully synchronised to PTP time ( 1 = synced, 0 = not-synced )"
+MFM,double_float,7,Mass Flow Meter
+flight_num,text,5,"indicates the flight number for this packet ( an ""empty"" string here indicates that the CRIO hasn't been assigned a flight number )"
+CPU_Load,single_float,5,indicate cRIO CPU total %
+USB_disk_space,single_float,5,USB disk space used in %
+crio_UDP_num,unsigned_int,6,this number starts @ zero and increments with each UDP packet - used for verification of packet stream
+conc,single_float,8,Reading in signed engineering unit (ppb) for Ozone Signal
+benchtemp,single_float,5,Bench temperature (degC) used in instrument calculations (temperature compensation is on)
+press,single_float,5,Absorption cell pressure reading (mmHg) used in instrument calculation (pressure compensation on)
+cellAint,unsigned_int,6,Lamp A intensity (Hz)
+cellBint,unsigned_int,6,Lamp B intensity (Hz)
+FlowA,single_float,5,Sample flow in cell A (L per min)
+FlowB,single_float,5,Sample flow in cell B (L per min)
+lamptemp,single_float,5,Lamp temperature (degC)
+flag,text,8,"Status of the device, including alarms in 8 Hex digits"
+V6,unsigned_int,2,Tei Ozone zeroing valve

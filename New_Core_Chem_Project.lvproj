@@ -82,7 +82,7 @@
 		<Item Name="Core_Chem_User_Interface_v3.0.vi" Type="VI" URL="../Core_Chem_User_Interface_v3.0.vi"/>
 		<Item Name="Core_Chem_User_Interface_v3.1.vi" Type="VI" URL="../Core_Chem_User_Interface_v3.1.vi"/>
 		<Item Name="Core_Chem_User_Interface_v3.2.vi" Type="VI" URL="../Core_Chem_User_Interface_v3.2.vi"/>
-		<Item Name="Core_Chem_User_Interface_v4.0_Scroll_Pump.vi" Type="VI" URL="../Core_Chem_User_Interface_v4.0_Scroll_Pump.vi"/>
+		<Item Name="Core_Chem_User_Interface_v4.1_Scroll_Pump.vi" Type="VI" URL="../Core_Chem_User_Interface_v4.1_Scroll_Pump.vi"/>
 		<Item Name="Core_Chem_User_Interface_v3.2_test.vi" Type="VI" URL="../Core_Chem_User_Interface_v3.2_test.vi"/>
 		<Item Name="CoreChem_Interface_v1.vi" Type="VI" URL="../CoreChem_Interface_v1.vi"/>
 		<Item Name="FGGA_Viewer_2.1.vi" Type="VI" URL="../FGGA_Viewer_2.1.vi"/>
@@ -447,10 +447,10 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{D336AF08-7B8A-4862-8733-099F8BCA70A1}</Property>
-				<Property Name="Bld_version.build" Type="Int">64</Property>
+				<Property Name="Bld_version.build" Type="Int">66</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">Core_Chem_User_Interface_v4.0_Scroll_Pump.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../Applications/Core_Chem_User_Interface_v4.0_Scroll_Pump.exe</Property>
+				<Property Name="Destination[0].destName" Type="Str">Core_Chem_User_Interface_v4.1_Scroll_Pump.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../Applications/Core_Chem_User_Interface_v4.1_Scroll_Pump.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
@@ -461,7 +461,7 @@
 				<Property Name="Destination[2].path" Type="Path">../Applications</Property>
 				<Property Name="Destination[2].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{F90ED6D2-5EA8-4D7B-92A9-680B1482AD5D}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{FF9EA0D7-4DF7-4DD1-8955-C872FC129EEE}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Core_Chem_User_Interface_v1.0.vi</Property>
@@ -476,9 +476,12 @@
 				<Property Name="Source[12].itemID" Type="Ref">/My Computer/Core_Chem_User_Interface_v3.2.vi</Property>
 				<Property Name="Source[12].type" Type="Str">VI</Property>
 				<Property Name="Source[13].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[13].itemID" Type="Ref">/My Computer/Core_Chem_User_Interface_v4.0_Scroll_Pump.vi</Property>
-				<Property Name="Source[13].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[13].itemID" Type="Ref"></Property>
 				<Property Name="Source[13].type" Type="Str">VI</Property>
+				<Property Name="Source[14].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[14].itemID" Type="Ref">/My Computer/Core_Chem_User_Interface_v4.1_Scroll_Pump.vi</Property>
+				<Property Name="Source[14].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[14].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Core_Chem_User_Interface_v1.1.vi</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
@@ -503,13 +506,13 @@
 				<Property Name="Source[9].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[9].itemID" Type="Ref">/My Computer/Core_Chem_User_Interface_v2.1.vi</Property>
 				<Property Name="Source[9].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">14</Property>
+				<Property Name="SourceCount" Type="Int">15</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">FAAM_Core_Chem_Mojo</Property>
 				<Property Name="TgtF_internalName" Type="Str">FAAM_Core_Chem_Mojo</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2016 </Property>
 				<Property Name="TgtF_productName" Type="Str">FAAM_Core_Chem_Mojo</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{C3EB3132-634B-4BBD-902E-C052B858CF18}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">Core_Chem_User_Interface_v4.0_Scroll_Pump.exe</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Core_Chem_User_Interface_v4.1_Scroll_Pump.exe</Property>
 			</Item>
 			<Item Name="o3_Serial_Comms_Test" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
@@ -1748,11 +1751,11 @@ DirectoryIndex index.htm
 		<Item Name="2B_Tech Serial Data Recording &amp; DECADE 3.1.vi" Type="VI" URL="../2B_Tech Serial Data Recording &amp; DECADE 3.1.vi"/>
 		<Item Name="FGGA Serial Data Server &amp; Recordingv4.3.vi" Type="VI" URL="../FGGA Serial Data Server &amp; Recordingv4.3.vi"/>
 		<Item Name="FGGA Serial Data Server &amp; Recordingv4.3_10Hz.vi" Type="VI" URL="../FGGA Serial Data Server &amp; Recordingv4.3_10Hz.vi"/>
-		<Item Name="FGGA Serial Data Server &amp; Recordingv5.0_10Hz_Scroll_Pump.vi" Type="VI" URL="../FGGA Serial Data Server &amp; Recordingv5.0_10Hz_Scroll_Pump.vi"/>
+		<Item Name="FGGA Serial Data Server &amp; Recordingv5.0_10Hz_Scroll_Pump_TCPmillisec.vi" Type="VI" URL="../FGGA Serial Data Server &amp; Recordingv5.0_10Hz_Scroll_Pump_TCPmillisec.vi"/>
 		<Item Name="new FGGA Serial Data Server &amp; Recordingv4.2.vi" Type="VI" URL="../new FGGA Serial Data Server &amp; Recordingv4.2.vi"/>
 		<Item Name="new FGGA Serial Data Server &amp; Recordingv4.3.vi" Type="VI" URL="../new FGGA Serial Data Server &amp; Recordingv4.3.vi"/>
 		<Item Name="new FGGA Serial Data Server &amp; Recordingv4.3_10Hz.vi" Type="VI" URL="../new FGGA Serial Data Server &amp; Recordingv4.3_10Hz.vi"/>
-		<Item Name="new FGGA Serial Data Server &amp; Recordingv5.0_10Hz_Scroll_Pump.vi" Type="VI" URL="../new FGGA Serial Data Server &amp; Recordingv5.0_10Hz_Scroll_Pump.vi"/>
+		<Item Name="new FGGA Serial Data Server &amp; Recordingv5.0_10Hz_Scroll_Pump_TCPmillisec.vi" Type="VI" URL="../new FGGA Serial Data Server &amp; Recordingv5.0_10Hz_Scroll_Pump_TCPmillisec.vi"/>
 		<Item Name="SO2 43c Serial Data Recording &amp; DECADEv3.6.vi" Type="VI" URL="../SO2 43c Serial Data Recording &amp; DECADEv3.6.vi"/>
 		<Item Name="SO2 43i Serial Data Recording &amp; DECADEv4.2.vi" Type="VI" URL="../SO2 43i Serial Data Recording &amp; DECADEv4.2.vi"/>
 		<Item Name="SO2 43i Serial Data Recording &amp; DECADEv4.3.vi" Type="VI" URL="../SO2 43i Serial Data Recording &amp; DECADEv4.3.vi"/>
@@ -1788,6 +1791,9 @@ DirectoryIndex index.htm
 		<Item Name="old FGGA_10Hz_test.vi" Type="VI" URL="../old FGGA_10Hz_test.vi"/>
 		<Item Name="FGGA TCP Packet_v3.2.vi" Type="VI" URL="../FGGA TCP Packet_v3.2.vi"/>
 		<Item Name="new FGGA TCP Packet_v3.2.vi" Type="VI" URL="../new FGGA TCP Packet_v3.2.vi"/>
+		<Item Name="Timestamp_with_milliseconds_newFGGA_splitmilliseconds.vi" Type="VI" URL="../Timestamp_with_milliseconds_newFGGA_splitmilliseconds.vi"/>
+		<Item Name="new FGGA TCP Packet_v3.3.vi" Type="VI" URL="../new FGGA TCP Packet_v3.3.vi"/>
+		<Item Name="FGGA TCP Packet_v3.3.vi" Type="VI" URL="../FGGA TCP Packet_v3.3.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Get Scan Engine Mode.vi" Type="VI" URL="/&lt;vilib&gt;/NIScanEngine/ScanEngine/Get Scan Engine Mode.vi"/>
@@ -1881,7 +1887,6 @@ DirectoryIndex index.htm
 			<Item Name="new_FGGA_Data_Order_Sort.vi" Type="VI" URL="../new_FGGA_Data_Order_Sort.vi"/>
 			<Item Name="Timestamp_with_milliseconds.vi" Type="VI" URL="../Timestamp_with_milliseconds.vi"/>
 			<Item Name="Scroll_Pump_Monitoring_Manipulate_Parameters.vi" Type="VI" URL="../Scroll_Pump_Monitoring_Manipulate_Parameters.vi"/>
-			<Item Name="Timestamp_with_milliseconds_newFGGA.vi" Type="VI" URL="../Timestamp_with_milliseconds_newFGGA.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Multiple_build_test" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
@@ -1900,7 +1905,7 @@ DirectoryIndex index.htm
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{35BE2061-80EA-404D-81BD-3C6C7D30AF83}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
-				<Property Name="Bld_version.build" Type="Int">234</Property>
+				<Property Name="Bld_version.build" Type="Int">241</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>

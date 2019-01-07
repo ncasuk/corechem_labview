@@ -1,0 +1,21 @@
+field,num_of_bytes,bytes_per_data_point,representation,description
+$AL52CO01,9,9,text,Identifies which device created the packet (Aerolaser model 5002)
+packet_length,4,4,>unsigned_int,the length of this packet (not including all bytes up-to and including this number)
+utc_time,4,4,>unsigned_int,the valid time for this packet (usually 1 second behind actual time)
+ptp_sync,1,1,text,"indicates whether the ACS2653 PC is successfully synchronised to PTP time ( 1 = synced, 0 = not-synced )"
+ue9LJ_temp,2,2,>unsigned_int,equals the internal bench temperature of the UE9 Labjack usb device
+flight_num,4,4,text,"indicates the flight number for this packet ( an ""XXXX"" string here indicates that the ACS2653 PC hasn't been assigned a flight number )"
+conc,4,4,>single_float,Reading in signed decimal for CO Signal (ppb)
+counts,4,4,>single_float,PMT raw count rate (Hz)
+sens,4,4,>single_float,Detector sensitivity (Hz/ppb)
+zero,4,4,>single_float,Detector background (Hz)
+lampflow,4,4,>single_float,Plasma lamp CO2/Argon MFC flowrate (sccm)
+lamptemp,4,4,>single_float,Plasma lamp temperature (øc)
+monoflow,4,4,>single_float,Monochromator N2 MFC flowrate (sccm)
+monotemp,4,4,>single_float,Monochromator N2 temperature (øc)
+monopress,4,4,>single_float,Monochromator N2 pressure (bar);  Honeywell Press Transducer model SA
+cellpress,4,4,>single_float,Fluorescence cell vacuum (Torr)
+calpress,4,4,>single_float,CO/air calibrant gas pressure (bar); Honeywell Press Transducer model SA
+temppmt,4,4,>single_float,PMT temperature (øc)
+err,6,6,text,remote control error message
+cal_status,1,1,text,Either in calibration or not in calibration

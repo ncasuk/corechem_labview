@@ -1,0 +1,33 @@
+field,type,max_chars,description
+$AL52CO01,text,8,Identifies which device created the packet (Aerolaser model 5002)
+packet_length,unsigned_int,3,the length of the packet (not including all characters up-to the comma which follows this number)
+utc_time,unsigned_int,10,the valid time for this packet (usually 1 second behind actual time)
+ptp_sync,text,1,"indication of whether the CRIO is successfully synchronised to PTP time ( 1 = synced, 0 = not-synced )"
+MFM,single_float,7,Mass Flow Meter
+flight_num,text,5,"indicates the flight number for this packet ( an ""empty"" string here indicates that the CRIO hasn't been assigned a flight number )"
+CPU_Load,single_float,5,indicate cRIO CPU total %
+crio_UDP_num,unsigned_int,6,this number starts @ zero and increments with each UDP packet - used for verification of packet stream
+USB_disk_space,single_float,5,USB disk space used in %
+CO_Cal,signed_int,1,CO Calibration request of Labview software
+conc,double_float,9,Reading in signed decimal for CO Signal (ppb)
+counts,double_float,9,PMT raw count rate (Hz)
+sens,double_float,6,Detector sensitivity (Hz/ppb)
+zero,double_float,7,Detector background (Hz)
+lampflow,double_float,5,Plasma lamp CO2/Argon MFC flowrate (sccm)
+lamptemp,double_float,5,Plasma lamp temperature (c)
+monoflow,double_float,5,Monochromator N2 MFC flowrate (sccm)
+monotemp,double_float,5,Monochromator N2 temperature (c)
+monopress,double_float,4,Monochromator N2 pressure (bar)  Honeywell Press Transducer model SA
+cellpress,double_float,5,Fluorescence cell vacuum (Torr)
+calpress,double_float,4,CO/air calibrant gas pressure (bar) Honeywell Press Transducer model SA
+temppmt,double_float,5,PMT temperature (c)
+calconc,double_float,6,CO in air gas standard concentration (pbb)
+err,text,6,ERR_XX where XX is the error code
+cal_counter,signed_int,2,Number of CO Calibration Archieved
+err_counter,signed_int,2,Number of CO read error
+CO_vacuum_status,signed_int,2,CO vacuum status
+In_Cal,signed_int,2,CO calibration status
+ALEG1_press_delivery,single_float,6,CO2 pressure delivery (PSIA)
+ALREG1_press_content,single_float,6,CO2 pressure content (barG)
+ALREG2_press_content,single_float,6,N2 content (barG)
+ALREG3_press_content,single_float,6,Std content (barG)

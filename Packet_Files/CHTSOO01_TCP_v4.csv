@@ -1,0 +1,51 @@
+field,num_of_bytes,bytes_per_data_point,representation,description
+$CHTSOO01,9,9,text,Identifies which device created the packet
+packet_length,4,4,>unsigned_int,the length of the packet (not including all characters up-to the comma which follows this number)
+utc_time,4,4,>unsigned_int,the valid time for this packet (usually 1 second behind actual time)
+ptp_sync,1,1,text,"indicates whether the cRIO is successfully synchronised to PTP time (1 = synced, 0 = not synced)"
+dummy,2,2,text,reserved for cRIO temperature
+flight_num,4,4,text,"indicates the flight number for this packet ( an ""empty"" string here indicates that the CRIO hasn't been assigned a flight number )"
+conc,4,4,single_float,SO2 concentration in ppb (raw)
+pmt_volt,4,4,>signed_int,PMT voltage in volts
+lamp_volt,4,4,>signed_int,Lamp voltage in volts
+lamp_int,4,4,>signed_int,Lamp intensity in Hz
+internal_temp,4,4,single_float,Internal instrument temperature in degC
+react_temp,4,4,single_float,Reaction chamber temperature in degC
+react_press,4,4,single_float,Reaction chamber pressure in mmHg
+flow,4,4,single_float,Sample flow in litres per minute
+flags,8,8,text,"Status of the device, including alarms in 8 Hex digits"
+MFM,4,4,single_float,Mass Flow Meter
+ten_min_so2,4,4,single_float,10 min moving average of SO2 (ppb)
+eight_hr_so2,4,4,single_float,8 hour moving average (ppb)
+ten_min_so2_alm,2,2,>unsigned_int,ten minute alarm (boolean)
+eight_hr_so2_alm,2,2,>unsigned_int,eight hour alarm (boolean)
+MFC_2absolute_pressure,4,4,single_float,ALICAT MFC2 SO2 calibration gas (CALDECK) (PSIA)
+MFC_2temperature,4,4,single_float,ALICAT MFC2 SO2 calibration gas (CALDECK) (degC)
+MFC_2volumetic_flow,4,4,single_float,ALICAT MFC2 SO2 calibration gas (CALDECK) (lpm)
+MFC_2mass_flow,4,4,single_float,ALICAT MFC2 SO2 calibration gas (CALDECK) (slpm)
+MFC_2set_point,4,4,single_float,ALICAT MFC2 SO2 calibration gas (CALDECK) (slpm)
+MFC_3_absolute_pressure,4,4,single_float,ALICAT MFC3 TEiSO2 sample (PSIA)
+MFC_3_temperature,4,4,single_float,ALICAT MFC3 TEiSO2 sample (degC)
+MFC_3volumetic_flow,4,4,single_float,ALICAT MFC3 TEiSO2 sample (lpm)
+MFC_3mass_flow,4,4,single_float,ALICAT MFC3 TEiSO2 sample (slpm)
+MFC_3set_point,4,4,single_float,ALICAT MFC3 TEiSO2 sample (slpm)
+V6,2,2,>unsigned_int,SO2 zeroing valve
+V8,2,2,>unsigned_int,SO2 Cal valve (3 way)
+V9,2,2,>unsigned_int,SO2 Cal MFC2 valve (two way NC)
+MFC2_Set_Value,4,4,single_float,MFC2 software set value
+MFC3_Set_Value,4,4,single_float,MFC3 software set value
+mean_zero_cal_status,2,2,>unsigned_int,mean zero calculation enable / disable
+zero,4,4,single_float,SO2 zero offset in ppb
+sensitivity,4,4,single_float,SO2 sensitivity (unscaled / scaled)
+ev8_user_set_time,2,2,>unsigned_int,ev8 SO2 zero time set by the user
+auto_zeroing,2,2,>unsigned_int,automatically enable ev8
+ev8_zero_interval,2,2,>unsigned_int,ev8 SO2 zero interval set by the user
+inflight_alarm_MOCCA,2,2,>unsigned_int,MOCCA inflight alarm enable / disable
+MOCCA_so2_time,2,2,>unsigned_int,MOCCA time window delay to alarm
+MOCCA_so2_limit,2,2,>unsigned_int,MOCCA SO2 limit (set by user)
+ten_min_STEL_limit,2,2,>unsigned_int,10 min STEL limit (set by user)
+eight_hr_TWA_limit,2,2,>unsigned_int,8 hour TWA limit (set by user)
+cal_conc,4,4,single_float,SO2 concentration in calibration gas cylinder ppb
+simulate_conc,2,2,>unsigned_int,Simulate SO2 concentration enable / disable
+mocca_so2_sim,4,4,single_float,mocca SO2 (ppb)
+mocca_so2_alm,2,2,>unsigned_int,MOCCA SO2 alarm (boolean)

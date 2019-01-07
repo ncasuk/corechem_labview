@@ -1,0 +1,34 @@
+field,type,max_chars,description
+$AL52CO01,text,8,Identifies which device created the packet (Aerolaser model 5002)
+packet_length,unsigned_int,3,the length of the packet (not including all characters up-to the comma which follows this number)
+utc_time,unsigned_int,10,the valid time for this packet (usually 1 second behind actual time)
+ptp_sync,text,1,"indication of whether the CRIO is successfully synchronised to PTP time ( 1 = synced, 0 = not-synced )"
+crio_temp,text,1,equals the internal bench temperature of the device
+flight_num,text,5,"indicates the flight number for this packet ( an ""empty"" string here indicates that the CRIO hasn't been assigned a flight number )"
+crio_fpga_run,text,1,"indicates whether the FPGA code is running ( a value toggling e.g. 1-0-1-0?etc shows running code, fixed value = non running )"
+crio_rtc_run,text,1,"indicates whether the realtime code is running ( a value toggling e.g. 1-0-1-0?etc shows running code, fixed value = non running )"
+crio_status,text,1,"- currently unused but for future use (boolean, therefore 0,1 )"
+crio_UDP_num,unsigned_int,6,this number starts @ zero and increments with each UDP packet - used for verification of packet stream
+crio_aux_out1,text,1,"- currently unused but for future use ( text, max string size = 6 characters )"
+crio_aux_out2,text,1,"- currently unused but for future use ( text, max string size = 6 characters )"
+crio_aux_out3,text,1,"- currently unused but for future use ( text, max string size = 6 characters )"
+conc,single_float,9,Reading in signed decimal for CO Signal (ppb)
+counts,single_float,9,PMT raw count rate (Hz)
+sens,single_float,6,Detector sensitivity (Hz/ppb)
+zero,single_float,7,Detector background (Hz)
+lampflow,single_float,5,Plasma lamp CO2/Argon MFC flowrate (sccm)
+lamptemp,single_float,5,Plasma lamp temperature (›c)
+monoflow,single_float,5,Monochromator N2 MFC flowrate (sccm)
+monotemp,single_float,5,Monochromator N2 temperature (›c)
+monopress,single_float,4,Monochromator N2 pressure (bar);  Honeywell Press Transducer model SA
+cellpress,single_float,5,Fluorescence cell vacuum (Torr)
+calpress,single_float,4,CO/air calibrant gas pressure (bar); Honeywell Press Transducer model SA
+temppmt,single_float,5,PMT temperature (›c)
+err,text,6,ERR_XX where XX is the error code
+calstatus,signed_int,2,Calibration status of device
+ALEG1_press_delivery,single_float,,
+ALREG1_press_content,single_float,,
+ALREG2_press_content,single_float,,
+ALREG3_press_content,single_float,,
+In CAL?,signed_int,1,
+CO vacuum status,signed_int,1,

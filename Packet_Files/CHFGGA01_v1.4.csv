@@ -1,0 +1,17 @@
+field,type,max_chars,description
+$CHFGGA01,text,8,Identifies which device created the packet
+packet_length,unsigned_int,3,the length of the packet (not including all characters up-to the comma which follows this number)
+utc_time,unsigned_int,10,the valid time for this packet (usually 1 second behind actual time)
+dummy1,text,2,just a dummy variable
+dummy2,text,2,just a dummy variable
+flight_num,text,5,"indicates the flight number for this packet ( an ""empty"" string here indicates that the CRIO hasn't been assigned a flight number )"
+ch4,double_float,15,methane in ppm
+co2,double_float,15,carbon dioxide in ppm
+h2o,double_float,15,water in ppm
+press_torr,double_float,15,cell pressure in torr
+temp_c,double_float,15,cell temperature in Celsius
+fit_flag,double_float,15,spectral fitting flag
+rda_usec,double_float,15,Ring down time in microseconds (laser A)
+rdb_usec,double_float,15,Ring down time in microseconds (laser B)
+ch4_dry,double_float,15,methane dry in ppb (NB negative values when press_torr less than 47.5)
+co2_dry,double_float,15,carbon dioxide in ppm (NB negative values when press_torr less than 47.5)

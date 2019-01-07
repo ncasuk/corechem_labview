@@ -1,0 +1,12 @@
+field,num_of_bytes,bytes_per_data_point,representation,description
+$TWBOZO01,9,9,text,Identifies which device created the packet
+packet_length,4,4,>unsigned_int,the length of the packet (not including all characters up-to the comma which follows this number)
+utc_time,4,4,>unsigned_int,the valid time for this packet (usually 1 second behind actual time)
+ptp_sync,1,1,text,"indicates whether the cRIO is successfully synchronised to PTP time (1 = synced, 0 = not synced)"
+dummy,2,2,text,reserved for cRIO temperature
+flight_num,4,4,text,"indicates the flight number for this packet ( an ""empty"" string here indicates that the CRIO hasn't been assigned a flight number )"
+MFM,4,4,>single_float,Mass Flow Meter
+conc,4,4,>single_float,Reading in signed decimal for Ozone Signal (ppb)
+temp,4,4,>single_float,Bench temperature (degC)
+press,4,4,>single_float,Absorption cell pressure reading (mb)
+flow,4,4,>signed_int,Sample flow in cell (sccm)

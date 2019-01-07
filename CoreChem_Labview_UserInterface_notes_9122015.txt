@@ -1,0 +1,53 @@
+preflight:
+
+how do AERACK and COREDLUs manage inop data streams?
+
+preflight tab: shoudl list basic CB making sequence (pwrdist photo), and anything else not specific to instruments
+then call operator to act on specific inst tabs
+
+each instrument tab should have a preflight popup button/box for sanity checks (flows...), using photos and flow diags as props
+
+
+
+inst tabs
+
+should have preflight popup button
+main flow diag with overlay realtime indicators, and charting button
+
+System overview
+as well as overall rack plumbing diagram
+SAMPUMP MFM, cRIO temp
+add Calib Synch selector switch
+Caldeck valves LEDs?
+
+
+
+
+Steph to produce plumbing ref diag for CO gases (SS2H panel)
+
+also revised AL5002 with correct labelling, calib sequence timing for calib & zero valves indicators, flow diag to include cylinders/press transmits
+
+revised FGGA flow diag (with caldeck and eV1), also preflight gas stowage info/piccies for popup (as per CO)
+
+revised SO2 flow diag (with caldeck and eV8), See Freya's
+
+all visio diagrams to be saved as .gif, using screen resolution, and 1200 x 750 pixels custom size (MAX size for FM laptop screen which
+we believe is on 1280 x 960 resolution)
+
+
+
+
+
+
+
+
+diagnostics trace charting
+
+start with 120 min buffered time base reduce to 60 min if too heavy
+
+give Charlie a list of grouped diagnostics (eg Temp, Flow, press) per instrument
+to reduce # of charts
+
+give Charlie a list of min/max alarm/margins for red/amber/green traffic light (y-scaling)
+
+give Charlie the volt-bar scaling equation for deliv & content press transmi

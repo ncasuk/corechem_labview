@@ -1,0 +1,16 @@
+field,num_of_bytes,bytes_per_data_point,representation,description
+$CHTSOO01,9,9,text,Identifies which device created the packet
+packet_length,4,4,>unsigned_int,the length of the packet (not including all characters up-to the comma which follows this number)
+utc_time,4,4,>unsigned_int,the valid time for this packet (usually 1 second behind actual time)
+dummy1,2,2,text,
+dummy2,1,1,text,
+flight_num,4,4,text,"indicates the flight number for this packet ( an ""empty"" string here indicates that the CRIO hasn't been assigned a flight number )"
+conc,4,4,single_float,SO2 concentration in ppb
+pmt_volt,4,4,>signed_int,PMT voltage in volts
+lamp_volt,4,4,>signed_int,Lamp voltage in volts
+lamp_int,4,4,>signed_int,Lamp intensity in Hz
+internal_temp,4,4,single_float,Internal instrument temperature in degC
+react_temp,4,4,single_float,Reaction chamber temperature in degC
+react_press,4,4,single_float,Reaction chamber pressure in mmHg
+flow,4,4,single_float,Sample flow in litres per minute
+flags,8,8,text,"Status of the device, including alarms in 8 Hex digits"

@@ -1,0 +1,31 @@
+field,type,max_chars,description
+$CHFGGA01,text,8,Identifies which device created the packet
+packet_length,unsigned_int,3,the length of the packet (not including all characters up-to the comma which follows this number)
+utc_time,unsigned_int,10,the valid time for this packet (usually 1 second behind actual time)
+ptp_sync,text,1,"indication of whether the CRIO is successfully synchronised to PTP time ( 1 = synced, 0 = not-synced )"
+MFM,double_float,7,Mass Flow Meter
+flight_num,text,5,"indicates the flight number for this packet ( an ""empty"" string here indicates that the CRIO hasn't been assigned a flight number )"
+CPU_Load,single_float,5,indicate cRIO CPU total %
+USB_disk_space,single_float,5,USB disk space used in %
+ch4,double_float,15,methane in ppm
+co2,double_float,15,carbon dioxide in ppm
+h2o,double_float,15,water in ppm
+press_torr,double_float,15,cell pressure in torr
+temp_c,double_float,15,cell temperature in Celsius
+fit_flag,double_float,15,spectral fitting flag
+rda_usec,double_float,15,Ring down time in microseconds (laser A Methane/water)
+rdb_usec,double_float,15,Ring down time in microseconds (laser B CO2)
+ch4_dry,double_float,15,methane dry in ppb (NB negative values when press_torr less than 47.5)
+co2_dry,double_float,15,carbon dioxide in ppm (NB negative values when press_torr less than 47.5)
+MFC_1_absolute_pressure,double_float,6,ALICAT MFC1 FGGA calibration gas (CALDECK) (PSIA)
+MFC_1_temperature,double_float,6,ALICAT MFC1 FGGA calibration gas (CALDECK) (degC)
+MFC_1volumetic_flow,double_float,5,ALICAT MFC1 FGGA calibration gas (CALDECK) (lpm)
+MFC_1mass_flow,double_float,5,ALICAT MFC1 FGGA calibration gas (CALDECK)  (slpm)
+MFC_1set_point,double_float,5,ALICAT MFC1 FGGA calibration gas (CALDECK) (slpm)
+V1,signed_int,2,FGGA Calibration Inlet window valve (3 way) 
+V2,signed_int,2,FGGA high calibration (CALDECK 3 way)
+V3,signed_int,2,FGGA low calibration valve (CALDECK 3 way)
+V4,signed_int,2,FGGA Calibration MFC1 valve (CALDECK 2 way NC)
+restart_FGGA,signed_int,2,software restart FGGA
+FGGA_Pump,double_float,4,FGGA pump speed voltage control (0 to 1.4 volts)
+CAL_MFC_1Set_Value,double_float,5,MFC1 software set value
